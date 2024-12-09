@@ -3,7 +3,9 @@
     "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@nomiclabs/hardhat-waffle": "^2.0.6",
     "chai": "^5.1.2",
-    "hardhat": "^2.17"
+    "hardhat": "^2.17",
+    "prettier": "^3.4.2",
+    "prettier-plugin-solidity": "^1.4.1"
   },
   "scripts": {},
   "dependencies": {
