@@ -1,14 +1,6 @@
 {
-  "semi": true,
-  "tabWidth": 4,
-  "singleQuote": true,
-  "printWidth": 80,
-  "overrides": [
-    {
-      "files": "*.sol",
-      "options": {
-        "parser": "solidity-parse"
-      }
-    }
-  ]
+    "semi": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "printWidth": 80
 }
