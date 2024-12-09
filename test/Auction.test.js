@@ -254,7 +254,7 @@ describe("SimpleAuction Contract", function () {
     it("should revert if a bid is placed after the auction ends", async function () {
       await auction.startAuction(toTokens(100), 1);
 
-      await ethers.provider.send("evm_increaseTime", [3600 * 2]); // Simulate time passing
+      await ethers.provider.send("evm_increaseTime", [3600 * 2]);
       await auction.endTokensAuction();
 
       await expect(
@@ -271,11 +271,11 @@ describe("SimpleAuction Contract", function () {
     it("should leave token balance untouched if no bids are placed", async function () {
       await auction.startAuction(toTokens(100), 1);
 
-      await ethers.provider.send("evm_increaseTime", [3600 * 2]); // Simulate time passing
+      await ethers.provider.send("evm_increaseTime", [3600 * 2]);
       await auction.endTokensAuction();
 
       const balance = await auction.getTokenBalance();
-      expect(balance).to.eql(toTokens(1000)); // No tokens allocated
+      expect(balance).to.eql(toTokens(1000));
     });
   });
 });
